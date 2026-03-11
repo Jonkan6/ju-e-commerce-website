@@ -12,7 +12,10 @@
       <div>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
+
+        <button class="cart-button" onclick="openCart()">
+          Cart (<span id="cart-count">0</span>)
+        </button>
       </div>
     </nav>
 
@@ -30,6 +33,7 @@
 
       <button onclick="closeCart()">Close</button>
     </div>
+
     <script src="js/products.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/main.js"></script>

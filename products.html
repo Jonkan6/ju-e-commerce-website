@@ -10,20 +10,20 @@
     <nav>
       <h1>NextGen Computers</h1>
       <div>
-        <div>
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
 
-          <button class="cart-button" onclick="openCart()">
-            Cart (<span id="cart-count">0</span>)
-          </button>
-        </div>
+        <button class="cart-button" onclick="openCart()">
+          Cart (<span id="cart-count">0</span>)
+        </button>
       </div>
     </nav>
+
     <main>
       <h2>Our Products</h2>
       <div id="product-list" class="product-container"></div>
     </main>
+
     <div id="cart-sidebar" class="cart-sidebar">
       <h2>Your Cart</h2>
 
@@ -33,6 +33,7 @@
 
       <button onclick="closeCart()">Close</button>
     </div>
+
     <script src="js/products.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/main.js"></script>
