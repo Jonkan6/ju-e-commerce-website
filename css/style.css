@@ -1,9 +1,11 @@
+/* Padge layut and background */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f5f5f5;
 }
 
+/* Navigation bar at the top of the site */
 nav {
   background-color: #111;
   color: white;
@@ -13,21 +15,32 @@ nav {
   align-items: center;
 }
 
+/* Links in navigation bar */
 nav a {
   color: white;
-  margin-left: 15px;
+  margin: 20px;
   text-decoration: none;
 }
+/* hover effect For links */
+a:hover {
+  background-color: lightgray;
+  padding: 0.4rem;
+  font-size: 16px;
+  border-radius: 0.3rem;
+}
 
+/* Main page content */
 main {
   padding: 2rem;
 }
 
+/* Centered homepage text */
 .center {
   text-align: center;
   margin-top: 60px;
 }
 
+/* styling for the buttons */
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -35,13 +48,21 @@ main {
   color: white;
   border-radius: 5px;
   text-decoration: none;
+  transition: all 0.4s;
 }
+/* Hover effect for buttons */
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Product grid layout */
 .product-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
+/* Individual product card */
 .product-card {
   background: white;
   padding: 1rem;
@@ -54,6 +75,7 @@ main {
   margin-top: 0;
 }
 
+/* Product card button */
 .product-card button {
   margin-top: 10px;
   padding: 8px;
@@ -63,6 +85,8 @@ main {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Cart button in navbar */
 .cart-button {
   background: #0066ff;
   color: white;
@@ -72,6 +96,7 @@ main {
   cursor: pointer;
 }
 
+/* Cart sidebar (hidden by default) */
 .cart-sidebar {
   position: fixed;
   right: -400px;
@@ -84,6 +109,7 @@ main {
   transition: right 0.3s;
 }
 
+/* Cart becomes visible when active */
 .cart-sidebar.active {
   right: 0;
 }

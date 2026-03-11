@@ -46,11 +46,13 @@ function displayCart() {
 
   var total = 0;
 
+  // Loop through all items in the cart
   for (var i = 0; i < cart.length; i++) {
     var item = cart[i];
 
     total += item.price;
 
+    // Create HTML for each cart item
     cartItems.innerHTML +=
       "<div>" +
       "<p>" +
