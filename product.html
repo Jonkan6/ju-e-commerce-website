@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Gaming PC RTX 4070 - NextGen Computers</title>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <h1>NextGen Computers</h1>
+
+      <div>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+
+        <button class="cart-button" onclick="openCart()">
+          Cart (<span id="cart-count">0</span>)
+        </button>
+      </div>
+    </nav>
+
+    <!-- Product details -->
+    <main>
+      <h2>Gaming PC RTX 4070</h2>
+
+      <div class="product-detail">
+        <img src="img/gaming-pc.jpg" alt="Gaming PC RTX 4070" />
+
+        <div>
+          <h3>Gaming PC RTX 4070</h3>
+
+          <p>
+            High-performance gaming PC built for modern gaming, demanding
+            applications and smooth high-resolution gameplay.
+          </p>
+
+          <p>
+            The RTX 4070 provides excellent graphics performance for gaming and
+            other demanding tasks.
+          </p>
+
+          <h3>Price: $1499</h3>
+
+          <button class="product-detail-button" onclick="addToCart(1)">
+            Add to Cart
+          </button>
+
+          <br />
+          <br />
+
+          <a href="products.html" class="button"> Back to Products </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Cart sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+      <h2>Your Cart</h2>
+
+      <div id="cart-items"></div>
+
+      <p id="total-price"></p>
+
+      <button onclick="closeCart()">Close</button>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

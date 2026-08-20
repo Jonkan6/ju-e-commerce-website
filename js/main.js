@@ -24,6 +24,9 @@ if (productContainer) {
       '<button onclick="addToCart(' +
       product.id +
       ')">Add to Cart</button>' +
+      (product.id === 1
+        ? '<br><br><a href="product.html" class="button">View Details</a>'
+        : "") +
       "</div>";
   }
 }
